@@ -1,6 +1,8 @@
 # Airbnb-price-prediction
 Predict Airbnb properties' price using self-created convenience-score features
 
+**[My Medium Post]**(https://medium.com/@JennyChen_/can-propertys-convenience-score-improve-airbnb-price-prediction-performance-25e93b3aae)
+
 ### 1. Installation 
 - "requirements.txt"
 
