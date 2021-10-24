@@ -1,7 +1,7 @@
 # Airbnb-price-prediction
 Predict Airbnb properties' price using self-created convenience-score features
 
-** Feel free to check my **[Medium Post](https://medium.com/@JennyChen_/can-propertys-convenience-score-improve-airbnb-price-prediction-performance-25e93b3aae)** for more background information. 
+Feel free to check my **[Medium Post](https://medium.com/@JennyChen_/can-propertys-convenience-score-improve-airbnb-price-prediction-performance-25e93b3aae)** for more background information. 
 
 ### 1. Installation 
 - "requirements.txt"
@@ -22,8 +22,8 @@ Predict Airbnb properties' price using self-created convenience-score features
 
   *2. Define the Airbnb property's convenience score:*
   - Given a radius threshold c (eg, c = 2km), for each Airbnb property, I create two convenience score-related variables: 
-    - 1. **"cs_2_counts"**: count the number of parks (or attractions) within the c=2km radius, which sets the property as the center point. 
-    - 2. **"cs_2_avgdist"**: average distance of those chosen parks (or attractions) within the c=2km radius.
+    - 1. **"cs_2_counts"**: count the number of parks (or attractions) within a c=2km radius, which sets the property as the center point. 
+    - 2. **"cs_2_avgdist"**: average distance of those chosen parks (or attractions) within a c=2km radius.
   - Then, replicate the above process with various values of radius threshold. Here, I will use c=1,2,..10.
 
 - Baseline feature set: 
