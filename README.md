@@ -19,10 +19,10 @@ Predict Airbnb properties' price using self-created convenience-score features
     - [Tourist Attractions](https://www.thecrazytourist.com/25-best-things-seattle-washington/). 55 Best Things to Do in Seattle (Washington), this data does not include lat and long information so I use **web-scrapping** to get location information.
 
   *2. Define the Airbnb property's convenience score:*
-  - Given a circle threshold such as c = 2km, for each Airbnb property, I create two convenience score-related variables: 
-    - 1. **"cs_2_counts"**: count the number of parks (or attractions) within the c=2km circle, which sets the property as the center point. 
-    - 2. **"cs_2_avgdist"**: average distance of those chosen parks (or attractions) within the c=2km circle.
-  - Then, replicate the above process with various values of circle threshold. Here, I will use c=1,2,..10.
+  - Given a radius threshold c (eg, c = 2km), for each Airbnb property, I create two convenience score-related variables: 
+    - 1. **"cs_2_counts"**: count the number of parks (or attractions) within the c=2km radius, which sets the property as the center point. 
+    - 2. **"cs_2_avgdist"**: average distance of those chosen parks (or attractions) within the c=2km radius.
+  - Then, replicate the above process with various values of radius threshold. Here, I will use c=1,2,..10.
 
 - Baseline feature set: 
   - Because this Settle Airbnb dataset has been investigated by many people on Kaggle, I will use selected features by [Zacks Shen](https://www.kaggle.com/zacksshen/kaggle-seattle-airbnb/data) as my baseline feature set.  
